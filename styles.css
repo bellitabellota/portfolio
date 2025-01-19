@@ -31,7 +31,7 @@ h2, p {
 	align-items: center;
 	justify-content: center;
 }
-
+/* The below might need some adjustments for big screens sizes */
 .about::before {
 	content: "";
 	position: absolute;
@@ -41,7 +41,6 @@ h2, p {
 	bottom: 0;
 	z-index: -1;
 	background-color: var(--bg-color);
-	/* the line below will need a min-height and a media query for small sizes */
 	transform: skewY(-12.5deg) translateY(-29%);
 	box-shadow: var(--b-shadow);
 }
@@ -53,13 +52,13 @@ h2, p {
 	align-items: center;
 }
 
-.about-image-container {
+.about-image {
 	display: flex;
 	justify-content: center;
 	align-items: end;
 	width: 44%;
 	aspect-ratio: 1/1;
-	/* Provide correct image size once decided */
+	/* Provide correct image size once decided (in case of table consider scaling factor as well*/
 	background-image: url("img/profile_frontal_3500x3500.jpg");
 	background-size: contain;
 	box-shadow: var(--b-shadow);
@@ -106,4 +105,83 @@ h2, p {
 
 .icons i {
 	font-size: 1.5rem;
+}
+
+.about-image-tablet {
+	display: none;
+	background-image: none;
+}
+
+/* Styles for tablet size */
+
+@media (max-width: 1000px) and (min-width: 500px) {
+	.about-container {
+		display: block;
+	}
+
+	.info-card {
+		width: min(82%, 669px);
+		margin-left: auto;
+		margin-right: auto;
+		padding: 1rem 2rem;
+	}
+
+	.about-image {
+		display: none;
+		background-image: none;
+	}
+
+	.about-image-tablet {
+		display: block;
+		background-image: url("img/profile_frontal_3500x3500.jpg");
+		background-size: contain;
+		width: max(35vw, 250);
+		aspect-ratio: 1/1;
+		float: left;
+		margin-right: 1.4rem;
+		shape-outside: inset(0 0 12% 0);
+		transform-origin: bottom right;
+		box-shadow: var(--b-shadow);
+	}
+
+	.about-image-tablet .about-image-text {
+		color: white;
+		font-family: "Playfair Display", serif;
+		white-space: nowrap;
+		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.616);
+		transform: translate(90%, -10%);
+	}
+
+	.info-card h2 {
+		padding-top: 3rem;
+	}
+	.info-card p {
+		padding-bottom: 3rem;
+	}
+
+	.icons {
+		display: none;
+	}
+}
+
+@media (max-width: 750px) and (min-width: 500px) {
+	.about-image-tablet {
+		transform: scale(1.3) translateY(-10%);
+	}
+
+	.about-image-tablet .about-image-text {
+		font-size: 5.5vw;
+	}
+}
+
+/* Fine adjustment of image and image text scaling */
+
+@media (max-width: 1000px) and (min-width: 750px) {
+	.about-image-tablet {
+		transform: scale(1.2) translateY(-10%);
+	}
+
+	.about-image-tablet .about-image-text {
+		font-size: 5.1vw;
+	}
 }
