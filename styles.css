@@ -185,3 +185,61 @@ h2, p {
 		font-size: 5.1vw;
 	}
 }
+
+/* Styles for mobile view */
+
+@media (max-width: 499px) {
+	.about {
+		padding-top: 10%;
+	}
+
+	.about::before {
+		height: 80vh;
+		transform: skewY(-32deg) translateY(-35%);
+	}
+	
+	.about-container {
+		flex-direction: column;
+	}
+
+	.about-image {
+		width: 94%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		aspect-ratio: 1 / 1.6;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.about-image-text {
+		font-size: 19vw;
+		white-space: wrap;
+		padding-left: 5%;
+		align-items: end;
+		transform: translateY(7%);
+	}
+
+	.info-card {
+		background-color: transparent;
+		box-shadow: none;
+		padding: 13vw 0 1.25rem 0;
+	}
+
+	.info-card h2 {
+		font-size: 12vw;
+		text-align: center;
+	}
+
+	.info-card p {
+		font-size: 5.5vw;
+		padding-bottom: 1rem;
+	}
+
+	.icons {
+		justify-content: center;
+	}
+
+	.icons i {
+		font-size: 9vw;
+	}
+}
