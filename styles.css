@@ -326,3 +326,49 @@ h3 {
 		width: calc(94% / 2);
 	}
 }
+
+/* Styles for 'My work' section - mobile */
+
+@media (max-width: 499px) {
+	.my-work {
+		padding: 25vw 5vw 45vw 5vw;
+	}
+
+	.my-work h2 {
+		text-align: center;
+		font-size: 13vw;
+	}
+
+	.project-container {
+		padding-top: 4.5vw;
+		padding-bottom: 3.5vw;
+		row-gap: 15vw;
+	}
+
+	.project  {
+		width: calc(100%);
+	}
+
+	.project-description {
+		padding: 4vw 6vw 2rem 6vw;
+	}
+
+	.my-work h3 {
+		font-size: 6vw;
+	}
+
+	.project-icon-links {
+		gap: 3vw;
+	}
+
+	.project-icon-links a {
+		width: 6vw;
+		font-size: 6vw;
+	}
+
+	.project-description-body {
+		font-size: 4.5vw;
+		padding-top: 3vw;
+		padding-bottom: 15vw;
+	}
+}
