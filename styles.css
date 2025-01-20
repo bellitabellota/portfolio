@@ -251,10 +251,9 @@ h3 {
 	}
 }
 
-/* Styles for 'My work' section */
+/* Styles for 'My work' section - desktop */
 
 .my-work {
-	background-color: white;
 	padding: 2rem 6vw 4rem 6vw;
 }
 
@@ -309,4 +308,21 @@ h3 {
 	line-height: 1.25;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
+}
+
+/* Styles for 'My work' section - tablet */
+
+@media (max-width: 1000px) and (min-width: 500px) {
+	.my-work {
+		padding: 2rem 9vw 10rem 9vw;
+	}
+
+	.project-container {
+		column-gap: 6%;
+		row-gap: 7.5vw;;
+	}
+
+	.project  {
+		width: calc(94% / 2);
+	}
 }
