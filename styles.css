@@ -113,19 +113,19 @@ h3 {
 	padding-bottom: 2vw;
 }
 
-.icons {
+.about .icons {
 	display: flex;
 	justify-content: end;
 	align-items: center;
 	gap: 1rem;
 }
 
-.icons a {
+.about .icons a {
 	color: black;
 	text-decoration: none;
 }
 
-.icons i {
+.about .icons i {
 	font-size: 1.5rem;
 }
 
@@ -200,7 +200,7 @@ h3 {
 		padding-bottom: 4.75vw;
 	}
 
-	.icons {
+	.about .icons {
 		display: none;
 	}
 }
@@ -281,11 +281,11 @@ h3 {
 		padding-bottom: 1rem;
 	}
 
-	.icons {
+	.about .icons {
 		justify-content: center;
 	}
 
-	.icons i {
+	.about .icons i {
 		font-size: 9vw;
 	}
 }
@@ -356,7 +356,7 @@ h3 {
 
 /* Styles for 'My work' section - tablet */
 
-@media (max-width: 1000px) and (min-width: 500px) {
+@media (max-width: 999px) and (min-width: 500px) {
 	.my-work {
 		padding: 7vw 9vw 13vw 9vw;
 	}
@@ -428,7 +428,6 @@ h3 {
 	display: flex;
 	font-size: calc(1rem + 0.25vw);
 	justify-content: space-between;
-	gap: 3%;
 }
 
 .contact-information {
@@ -436,7 +435,7 @@ h3 {
 }
 
 .contact-information h2 {
-	padding-top: 1rem;
+	padding-top: 1.5vw;
 }
 
 .contact-introduction {
@@ -456,7 +455,7 @@ h3 {
 
 .image-contact {
 	background-image: url("img/DSC04527.JPG");
-	background-position: 50% 45%;
+	background-position: center;
 	background-size: cover;
 	width: 59%;
 	max-width: 650px;
@@ -464,10 +463,57 @@ h3 {
 }
 
 .contact .icons {
+	display:flex;
 	justify-content: start;
 	gap: 1.5rem;
 }
 
+.contact .icons a {
+	color: black;
+	text-decoration: none;
+}
+
 .contact .icons i {
 	font-size: 2.25rem;
+}
+
+/* Styles for Contact section - tablet */
+
+@media (max-width: 999px) and (min-width: 500px) {
+	.contact {
+		padding-top: 5vw;
+		padding-bottom: 7.5vw;
+	}
+	
+	.contact-container {
+		font-size: calc(0.875rem + 0.25vw);
+	}
+
+	.contact-information {
+		width: 50%;
+	}
+
+	.contact-information h2 {
+		padding-top: 5vw;
+	}
+	
+	.image-contact {
+		background-image: url("img/DSC04527.JPG");
+		background-position: 50% 50%;
+		width: 43%;
+		aspect-ratio: 5 / 7.25;
+	}
+}
+
+@media (max-width: 550px) and (min-width: 500px) {
+	.image-contact {
+		background-color: azure;
+		margin-top: 5vw;
+		aspect-ratio: 3/4;
+		align-self:self-start;
+	}
+
+	.contact .icons i {
+		font-size: 1.5rem;
+	}
 }
