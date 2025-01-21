@@ -281,7 +281,7 @@ h3 {
 /* Styles for 'My work' section - desktop */
 
 .my-work {
-	padding: 2rem 6vw 8vw 6vw;
+	padding: 5vw 6vw 8vw 6vw;
 }
 
 .project-container {
@@ -290,8 +290,8 @@ h3 {
 	column-gap: 3%;
 	row-gap: 4vw;
 	justify-content: center;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+	padding-top: 0.75vw;
+	padding-bottom: 0.75rem;
 }
 
 .project  {
@@ -332,6 +332,14 @@ h3 {
 	line-height: 1.25;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
+}
+
+/* 'My work' styles for desktop sizes between 1500 and 1999px*/
+
+@media (max-width: 1999px) and (min-width: 1500px) {
+	.my-work {
+		padding: 3vw 6vw 8vw 6vw;
+	}
 }
 
 /* Styles for 'My work' section - tablet */
