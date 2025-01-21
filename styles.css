@@ -236,7 +236,7 @@ h3 {
 
 @media (max-width: 499px) {
 	.about {
-		padding-top: 10%;
+		padding-top: 3vw;
 	}
 
 	.about::before {
@@ -268,7 +268,7 @@ h3 {
 	.info-card {
 		background-color: transparent;
 		box-shadow: none;
-		padding: 13vw 0 1.25rem 0;
+		padding: 13vw 0 0 0;
 	}
 
 	.info-card h2 {
@@ -394,7 +394,7 @@ h3 {
 	}
 
 	.project-description {
-		padding: 4vw 6vw 2rem 6vw;
+		padding: 4vw 6vw 6vw 6vw;
 	}
 
 	.my-work h3 {
@@ -412,7 +412,7 @@ h3 {
 	.project-description-body {
 		font-size: 4.5vw;
 		padding-top: 3vw;
-		padding-bottom: 15vw;
+		padding-bottom: 12.5vw;
 	}
 }
 
