@@ -507,7 +507,6 @@ h3 {
 
 @media (max-width: 550px) and (min-width: 500px) {
 	.image-contact {
-		background-color: azure;
 		margin-top: 5vw;
 		aspect-ratio: 3/4;
 		align-self:self-start;
@@ -515,5 +514,58 @@ h3 {
 
 	.contact .icons i {
 		font-size: 1.5rem;
+	}
+}
+
+/* Styles for Contact section - mobile */
+
+@media (max-width: 499px) {
+	.contact {
+		padding: 6vw 0 0 0;
+	}
+	
+	.contact-container {
+		flex-direction: column;
+	}
+
+	.contact-information {
+		width: calc(100% - 10vw);
+		padding-right: 5vw;
+		padding-left: 5vw;
+		padding-bottom: 8vw;
+	}
+
+	.contact-information h2 {
+		font-size: 12vw;
+		text-align: center;
+	}
+
+	.contact-introduction > p:first-child {
+		font-size: 5.5vw;
+	}
+
+	.address,
+	.contact-details p{
+		font-size: 4vw;
+	}
+
+	.contact-details img {
+		display: none;
+	}
+
+	.image-contact {
+		background-image: url("img/DSC04527.JPG");
+		background-position: center;
+		background-size: cover;
+		width: 100%;
+		aspect-ratio: 5 / 7.25;
+	}
+	.contact .icons {
+		justify-content: center;
+		gap: 15vw;
+	}
+
+	.contact .icons i {
+		font-size: 12.5vw;
 	}
 }
