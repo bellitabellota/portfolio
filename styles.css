@@ -84,8 +84,7 @@ h3 {
 	align-items: end;
 	width: 43.5%;
 	aspect-ratio: 1/1;
-	/* Provide correct image size once decided (in case of table consider scaling factor as well*/
-	background-image: url("img/profile_frontal_3500x3500.jpg");
+	background-image: url("img/profile_frontal_566x566.jpg");
 	background-size: contain;
 	box-shadow: var(--b-shadow);
 }
@@ -171,7 +170,7 @@ h3 {
 
 	.about-image-tablet {
 		display: block;
-		background-image: url("img/profile_frontal_3500x3500.jpg");
+		background-image: url("img/profile_frontal_350x350.jpg");
 		background-size: contain;
 		width: 35vw;
 		aspect-ratio: 1/1;
@@ -250,6 +249,7 @@ h3 {
 
 	.about-image {
 		width: 94%;
+		background-image: url("img/profile_frontal_404x646.jpg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -454,7 +454,7 @@ h3 {
 }
 
 .image-contact {
-	background-image: url("img/DSC04527.JPG");
+	background-image: url("img/DSC04527_650x488.jpg");
 	background-position: center;
 	background-size: cover;
 	width: 59%;
@@ -498,7 +498,7 @@ h3 {
 	}
 	
 	.image-contact {
-		background-image: url("img/DSC04527.JPG");
+		background-image: url("img/DSC04527_379x548.jpg");
 		background-position: 50% 50%;
 		width: 43%;
 		aspect-ratio: 5 / 7.25;
@@ -554,7 +554,7 @@ h3 {
 	}
 
 	.image-contact {
-		background-image: url("img/DSC04527.JPG");
+		background-image: url("img/DSC04527_499x724.jpg");
 		background-position: center;
 		background-size: cover;
 		width: 100%;
