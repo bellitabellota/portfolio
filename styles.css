@@ -6,7 +6,7 @@
 	--opaque-text-color: rgba(0, 0, 0, 0.675);
 }
 
-body {
+	body {
 	margin: 0;
 	font-family: "Roboto", serif;
 	line-height: 1.5;
@@ -49,21 +49,21 @@ h3 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 }
-/* The below might need some adjustments for big screens sizes, especially skew */
+
 .about::before {
 	content: "";
 	position: absolute;
 	top: 0;
 	right: 0;
 	left: 0;
-	height: 100%;
+	height: 125%;
 	z-index: -1;
 	background-color: var(--bg-color);
-	transform: skewY(-12.5deg);
-	transform-origin: bottom left;
+	transform: skewY(-11deg) translateY(-39%);
+	transform-origin: center bottom;
 	box-shadow: var(--b-shadow);
-	overflow: hidden;
 }
 
 .about-container {
@@ -71,8 +71,8 @@ h3 {
 	max-width: 1100px;
 	display: flex;
 	align-items: center;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-top: 4vw;
+	margin-bottom: 4vw;
 }
 
 .about-image {
@@ -99,15 +99,15 @@ h3 {
 	flex: 1;
 	background-color: white;
 	height: fit-content;
-	padding: 1.25rem 1.5rem 1.25rem 1rem;
+	padding: 1.75vw 2vw 1.25vw 1.25rem;
 	box-shadow: var(--b-shadow);
 }
 
 .info-card p {
 	font-size: calc(1rem + 0.25vw);
 	color: var(--opaque-text-color);
-	padding-top: 1rem;
-	padding-bottom: 2rem;
+	padding-top: 1vw;
+	padding-bottom: 2vw;
 }
 
 .icons {
