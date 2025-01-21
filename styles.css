@@ -93,7 +93,7 @@ h3 {
 .about-image-text {
 	color: white;
 	font-family: "Playfair Display", serif;
-	font-size: min(5vw, 62px);
+	font-size: min(4.1vw, 53px);
 	white-space: nowrap;
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.616);
 }
@@ -187,7 +187,7 @@ h3 {
 		font-family: "Playfair Display", serif;
 		white-space: nowrap;
 		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.616);
-		transform: translate(90%, -10%);
+		transform: translate(75%, -10%);
 		padding-top: 0.55vw;
 	}
 
@@ -215,7 +215,7 @@ h3 {
 	}
 
 	.about-image-tablet .about-image-text {
-		font-size: 5.5vw;
+		font-size: 5vw;
 		padding-top: 2vw;
 	}
 }
@@ -258,7 +258,7 @@ h3 {
 	}
 
 	.about-image-text {
-		font-size: 19vw;
+		font-size: 15vw;
 		white-space: wrap;
 		padding-left: 5%;
 		align-items: end;
