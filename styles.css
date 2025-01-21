@@ -106,7 +106,7 @@ h3 {
 	box-shadow: var(--b-shadow);
 }
 
-.info-card p {
+.info-card > p {
 	font-size: calc(1rem + 0.25vw);
 	color: var(--opaque-text-color);
 	padding-top: 1vw;
@@ -148,16 +148,20 @@ h3 {
 
 /* 'About' styles for tablet size */
 
-@media (max-width: 1000px) and (min-width: 500px) {
+@media (max-width: 999px) and (min-width: 500px) {
+	.about::before {
+		transform: skewY(-14deg) translateY(-54%);
+	}
 	.about-container {
 		display: block;
+		margin-top: 12.5vw;
 	}
 
 	.info-card {
 		width: min(82%, 669px);
 		margin-left: auto;
 		margin-right: auto;
-		padding: 1rem 2rem;
+		padding: 1.75vw 3vw;
 	}
 
 	.about-image {
@@ -169,10 +173,10 @@ h3 {
 		display: block;
 		background-image: url("img/profile_frontal_3500x3500.jpg");
 		background-size: contain;
-		width: max(35vw, 250);
+		width: 35vw;
 		aspect-ratio: 1/1;
 		float: left;
-		margin-right: 1.4rem;
+		margin-right: 2.5vw;
 		shape-outside: inset(0 0 12% 0);
 		transform-origin: bottom right;
 		box-shadow: var(--b-shadow);
@@ -184,13 +188,16 @@ h3 {
 		white-space: nowrap;
 		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.616);
 		transform: translate(90%, -10%);
+		padding-top: 0.55vw;
 	}
 
+
 	.info-card h2 {
-		padding-top: 3rem;
+		padding-top: 4.75vw;
 	}
-	.info-card p {
-		padding-bottom: 3rem;
+
+	.info-card > p {
+		padding-bottom: 4.75vw;
 	}
 
 	.icons {
@@ -198,19 +205,24 @@ h3 {
 	}
 }
 
-@media (max-width: 750px) and (min-width: 500px) {
+@media (max-width: 749px) and (min-width: 500px) {
+	.about-container {
+		margin-top:17vw;
+	}
+
 	.about-image-tablet {
 		transform: scale(1.3) translateY(-10%);
 	}
 
 	.about-image-tablet .about-image-text {
 		font-size: 5.5vw;
+		padding-top: 2vw;
 	}
 }
 
 /* Fine adjustment of image and image text scaling */
 
-@media (max-width: 1000px) and (min-width: 750px) {
+@media (max-width: 999px) and (min-width: 750px) {
 	.about-image-tablet {
 		transform: scale(1.2) translateY(-10%);
 	}
@@ -346,7 +358,7 @@ h3 {
 
 @media (max-width: 1000px) and (min-width: 500px) {
 	.my-work {
-		padding: 2rem 9vw 10rem 9vw;
+		padding: 7vw 9vw 13vw 9vw;
 	}
 
 	.project-container {
