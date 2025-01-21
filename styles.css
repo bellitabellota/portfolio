@@ -43,7 +43,7 @@ h3 {
 	margin-top: 0.5rem;;
 }
 
-/* Header styles - Desktop */
+/* 'About' styles - Desktop */
 
 .about {
 	position: relative;
@@ -134,7 +134,19 @@ h3 {
 	background-image: none;
 }
 
-/* Header styles for tablet size */
+/* 'About' styles for desktop sizes between 1500 and 1999px */
+
+@media (max-width: 1999px) and (min-width: 1500px) {
+	.about-container {
+		max-width: 1300px;
+		margin-bottom: 6vw;
+	}
+	.about::before {
+		transform: skewY(-14deg) translateY(-45.5%);
+	}
+}
+
+/* 'About' styles for tablet size */
 
 @media (max-width: 1000px) and (min-width: 500px) {
 	.about-container {
@@ -208,7 +220,7 @@ h3 {
 	}
 }
 
-/* Header styles for mobile view */
+/* 'About' styles for mobile view */
 
 @media (max-width: 499px) {
 	.about {
